@@ -17,7 +17,7 @@ function JokeList(props) {
     return (
         <>
             <h1>My Jokes List</h1>
-            <div className="friend-container">
+            <div className="joke-container">
                 {jokes.map(joke => (
                     <JokeCard key={joke.id} joke={joke} />
                 ))}
