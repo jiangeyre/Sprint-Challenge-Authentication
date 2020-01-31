@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Router, Link, Switch } from 'react-router-dom';
 
 import Login from './components/Login';
-import List from './components/List';
+import JokeList from './components/List';
 import PrivateRoute from './utils/PrivateRoute';
 
 // import logo from './logo.svg';
@@ -21,7 +21,7 @@ function App() {
           </li>
         </ul>
         <Switch>
-          <PrivateRoute path="/jokes" component={List} />
+          <PrivateRoute path="/jokes" component={JokeList} />
           <Route path="/login" component={Login} />
           <Route component={Login} />
         </Switch>
